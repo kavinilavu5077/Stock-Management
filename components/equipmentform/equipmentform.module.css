@@ -1,0 +1,140 @@
+
+body {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+  .formContainer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem; 
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .labelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .labelContainer label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .inputContainer,
+  .selectContainer {
+    width: 100%;
+  }
+  
+  input,
+  select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  .buttonContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Center the buttons */
+    margin-top: 1rem;
+  }
+  
+  .submitButton,
+  .cancelButton {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 35px;
+    width: 120px; /* Make the buttons of equal size */
+    border-radius: 4px; /* Add border radius */
+    text-align: center; /* Align text to the center */
+  }
+  
+  .submitButton {
+    background-color: #4CAF50; /* Make the submit button green */
+    border-radius: 12px; 
+  }
+  
+  .cancelButton {
+    background-color: #f44336; /* Make the cancel button red */
+    border-radius: 12px; 
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049;
+  }
+  
+  .cancelButton:hover {
+    background-color: #da190b;
+  }
+
+  
+  .gradientContainer {
+    width: calc(100% - 250px);
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    
+    position: absolute;
+    left: 250px;
+    top: 50px;
+
+  }
+  
+  .pageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* lll */
+  .heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .message {
+    color: red;
+    /* font-weight: bold; */
+    margin-top: 1rem;
+  }
+  

@@ -1,0 +1,36 @@
+/* styles.css */
+.backButton {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-540%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  z-index: 2;
+  width:auto;
+  background: linear-gradient(to right, #000080, #0000CD, #483D8B); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.backButton:hover {
+  opacity: 0.9;
+}
+
+.clickButton{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer;
+  background: linear-gradient(to right, #000080, #0000CD, #483D8B); 
+  margin-left: -80px;
+  margin-bottom: 20px;
+  width:100px;
+}

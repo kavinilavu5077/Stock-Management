@@ -1,0 +1,379 @@
+.container {
+  
+  margin-top: -800rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #f0f4f7 0%, #d9e4ed 100%); /* Cool and appealing gradient background */
+  max-width: 800px; /* Increase the max-width */
+  margin: 0 auto; /* Center the container */
+}
+
+.heading {
+  margin-top: 0px;
+  margin-bottom: 35px;
+  color: #191970;
+  font-family: 'Roboto', sans-serif;/* Update the font */
+  font-weight:bold;
+  font-size: 28px; /* Increase font size */
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3);
+}
+
+
+.dataContainer {
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; /* Add width for the data container */
+}
+.dataRowContainer {
+ position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 65%; /* Decrease the width of the row container */
+  margin-bottom: 20px;
+  margin-left: auto; /* Center the row container */
+  margin-right: auto; /* Center the row container */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f6f8fa;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.insertModeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Add align-items to center the elements vertically */
+  width: 100%;
+}
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+.inserDataInput {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #f73c3c;
+  overflow: auto; /* Add overflow property */
+  resize: none; /* Add resize property */
+  width: 100%; /* Set the width of the input field */
+  min-height: 40px; /* Set a minimum height for the input field */
+}
+
+
+
+
+.insertDataLabel {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Make the label bold */
+  text-transform: uppercase;
+  margin-right: 8px;
+  color: #b93333;
+  text-align: right;
+  flex-basis: 40%;
+  flex-shrink: 0;
+}
+.prevButton {
+  position: absolute;
+  left: 0px;
+  margin-left: 270px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nextButton {
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dataRow {
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column */
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dataLabel {
+  font-family: 'Roboto', sans-serif;
+  
+  font-weight: bold;
+  white-space: nowrap;
+  color: black;
+  text-align: left;
+  margin-bottom: 10px; /* Add margin-bottom to create a gap between the label and the value */
+}
+.dataValue {
+  font-family: 'Roboto', sans-serif;
+  flex-grow: 1;
+  font-weight: bolder;
+  color: #191970;
+  text-align: left;
+  white-space: nowrap;
+  overflow: auto; /* Change from hidden to auto */
+  max-width: 80%;
+  word-wrap: break-word; /* Add this line */
+  max-height: 100px; /* Add a max-height */
+}
+/* Customize the scrollbar */
+.dataValue::-webkit-scrollbar {
+  width: 2px; /* Decrease the width of the scrollbar */
+  background-color: #f5f5f5;
+  height: 7px;
+}
+
+.dataValue::-webkit-scrollbar-thumb {
+  border-radius: 3px; /* Decrease the border-radius of the scrollbar thumb */
+  background-color: #a8c0ff;
+}
+
+.dataValue::-webkit-scrollbar-thumb:hover {
+  background-color: #3f2b96;
+}
+
+.dataValue::-webkit-scrollbar-track {
+  border-radius: 3px; /* Decrease the border-radius of the scrollbar track */
+  background-color: #f5f5f5;
+}
+
+
+.dataInput {
+  
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Set the initial width of the input field to 100% */
+  min-height: 40px; /* Set a minimum height for the input field */
+  resize: vertical;
+}
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0px;
+  /* padding-right: 1000px; */
+  width: 100%; 
+  gap: 0px
+}
+
+/* .prevButton,
+.nextButton,
+.editButton,
+.insertButton,
+.saveButton,
+.cancelButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}*/
+.editButton{
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #2196F3 0%, #9C27B0 100%);
+  height: 30px;
+  color: #fff;
+  width: auto;
+  margin-left: 0px;
+  
+ 
+} 
+.insertButton {
+  padding: 6px 12px;
+  border: none;
+  
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #2196F3 0%, #9C27B0 100%);
+  color: #fff;
+} 
+
+.cancelButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #f44336 0%, #FF7043 100%);
+  color: #fff;
+} 
+
+.editButton:hover,
+.insertButton:hover,
+.cancelButton:hover {
+  opacity: 0.9;
+}
+.loading {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.prevButton {
+  border-radius: 12px;
+  background-image: linear-gradient(135deg, #2196F3 0%, #4CAF50 100%);
+
+margin-left: 16px;
+  width: 100px;
+  color: black;
+}
+
+.nextButton {
+  border-radius: 12px;
+  background-image: linear-gradient(135deg, #2196F3 0%, #4CAF50 100%);
+  width: 100px;
+  color: black;
+}
+.prevButton:hover,
+.nextButton:hover {
+ 
+  background-image: linear-gradient(135deg, #f0f4f7 0%, #d9e4ed 100%);
+}
+
+
+.saveCancelContainer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 250px;
+  padding-right: 1000px;
+  width: 100%; 
+  gap: 50px
+}
+.actionButtons {
+  display: flex;
+  gap: 20px;
+  margin-left: 190px;
+}
+.wrapCellContent {
+  white-space: normal;
+  line-height: 1.2;
+  padding: 8px 16px;
+}
+.custom-grid-toolbar .MuiButton-root,
+.custom-grid-toolbar .MuiInputBase-root {
+  font-size: 0.8rem;
+}
+
+/* styles.module.css */
+.rowDark {
+  background-color: #e8f5e9;
+}
+.disablePointerEvents {
+  pointer-events: none;
+}
+
+.rowLight {
+  background-color: #ffffff;
+}
+
+.columnHeader {
+  background-color: #4caf50;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+
+.saveButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.cancelButton {
+  background-color: #f44336;
+  border: none;
+  color: white;
+  
+}
+
+
+.previousButton:disabled,
+.nextButton:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+.deleteButton {
+  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-image: linear-gradient(135deg, #dc3545 0%, #FF5722 100%);
+  color: #fff;
+  width: auto;
+ 
+  height: 30px;
+  
+}
+
+.deleteButton:hover {
+  opacity: 0.9;
+}
+
+.gradientContainer {
+  width: calc(100% - 250px);
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+  
+  position: absolute;
+  left: 250px;
+  top: 50px;
+  /* Replace WIDTH_OF_NAVBAR and HEIGHT_OF_HOMEBAR with appropriate values */
+}
+
+.pageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.rowActionButtons {
+  position: absolute; /* Add this line */
+  right: -85px; /* Adjust this value to set the distance from the right side */
+  top: 50%;
+  transform: translateY(-100%);
+  margin-top: 16px;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
+}
+
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

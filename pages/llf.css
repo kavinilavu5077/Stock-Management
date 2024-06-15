@@ -1,0 +1,53 @@
+.llfContainer {
+  margin-top: 2rem;
+}
+
+.llfHeading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.llfButton {
+  margin-top: 1rem;
+}
+
+.llfCard {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.gradientContainer {
+  width: calc(100% - 250px);
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+
+  position: absolute;
+  left: 250px;
+  top: 50px;
+}
+
+.pageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.message {
+  color: red;
+  font-weight: bold; 
+  margin-top: 1rem;
+}

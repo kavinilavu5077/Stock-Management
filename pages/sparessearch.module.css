@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    margin-top: 0px;
+  }
+  
+  .formContainer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 350px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .labelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .labelContainer label {
+    margin-bottom: 0.5rem;
+    color: #191970;
+    font-weight: bold;
+  }
+  
+  .inputContainer,
+  .selectContainer {
+    width: 100%;
+  }
+  
+  input,
+  select {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .charCounter {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.2rem;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+    height: 35px;
+    border-radius: 12px; 
+    width: 120px; /* Decrease the size of the button */
+    margin: 0 auto; /* Center the button */
+  }
+  
+  button:hover {
+    background-color: #116b16;
+  }
+  .heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .message {
+    color: red;
+    font-weight: bold; 
+    margin-top: 1rem;
+  }
+  .gradientContainer {
+    width: calc(100% - 250px);
+    min-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    
+    position: absolute;
+    left: 250px;
+    top: 50px;
+    
+  }
+  
+  .pageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  

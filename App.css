@@ -1,0 +1,42 @@
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.app-content {
+  display: flex; 
+  flex-direction: column;
+  /* justify-content: center; */
+   align-items: center;  
+  padding-left: 250px;  /*Adjusted for the width of the left bar */
+  padding-top: 0 px;  /* Adjusted for the height of the navbar */
+   /* min-height: calc(100vh - 70px);  */
+  box-sizing: border-box;
+  width: calc(100% - 250px);
+}
+/* Add this to your existing CSS file */
+.gradient-container {
+  width: calc(100% - 100px);
+  min-height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #4AC2F7,#4DFF73);
+  position: absolute;
+  left: 100px;
+  top: 50px;
+  /* Replace WIDTH_OF_NAVBAR, HEIGHT_OF_HOMEBAR, COLOR1, and COLOR2 with appropriate values */
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
